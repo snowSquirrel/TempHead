@@ -46,6 +46,9 @@ alpha4.writeDisplay();
 if(f < 90 && f >= 80){
  alpha4.writeDigitAscii(2, '8');
  alpha4.writeDisplay(); 
+ int xEighty = f - 80;
+ alpha4.writeDigitAscii(3, '0'+ xEighty);
+ alpha4.writeDisplay(); 
 }
 if(f < 80 && f >= 70){
  alpha4.writeDigitAscii(2, '7');
